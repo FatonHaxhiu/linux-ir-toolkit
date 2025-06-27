@@ -6,11 +6,12 @@ import tarfile
 import argparse
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Linux IR Toolkit")
+    parser = argparse.ArgumentParser(description="Linux Forensics + Incident Response Toolkit")
     parser.add_argument('--output', '-o', default=None, help="Output directory (default: timestamped)")
     parser.add_argument('--package', '-p', action='store_true', help="Package artifacts into a tar.gz archive")
-    # Add more args like --report, --verbose later
+    parser.add_argument('--verbose', '-v', action='store_true', help="Enable verbose output")
     return parser.parse_args()
+
 
 ARTIFACT_DIR = f"artifacts_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 os.makedirs(ARTIFACT_DIR, exist_ok=True)
@@ -36,6 +37,23 @@ def package_artifacts():
     with tarfile.open(archive_name, 'w:gz') as tar:
         tar.add(ARTIFACT_DIR)
     print(f"Artifacts packaged into {archive_name}")
+
+def collect_cron_jobs():
+    save_command_output(['crontab', '-l'], 'crontab.txt')
+    save_command_output(['ls', '-lR', '/etc/cron*'], 'cron_dirs.txt')
+
+def generate_report():
+    report_path = os.path.join(ARTIFACT_DIR, 'report.md')
+    with open(report_path, 'w') as f:
+        f.write(f"# Incident Response Report\n\n")
+        f.write(f"Generated on: {datetime.now()}\n\n")
+        f.write(f"## Collected Artifacts\n")
+        for root, _, files in os.walk(ARTIFACT_DIR):
+            for file in files:
+                if file != 'report.md':
+                    f.write(f"- {file}\n")
+
+
 
 def main():
     args = parse_args()
@@ -81,6 +99,10 @@ def main():
     # Package all artifacts into a .tar.gz archive
     if args.package:
         package_artifacts()
+    
+    collect_cron_jobs()
 
+    generate_report()
+    
 if __name__ == '__main__':
     main()
