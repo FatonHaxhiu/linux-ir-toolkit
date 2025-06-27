@@ -4,8 +4,7 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)  
 [![Linux](https://img.shields.io/badge/Linux-Ubuntu-orange)](https://ubuntu.com/)  
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-automated-green)](https://github.com/features/actions)
-[![ps](https://img.shields.io/badge/ps-procps-green)](https://gitlab.com/procps-ng/procps)  
-[![netstat](https://img.shields.io/badge/netstat-net-tools-blue)](https://sourceforge.net/projects/net-tools/)  
+[![ps](https://img.shields.io/badge/ps-procps-green)](https://gitlab.com/procps-ng/procps) 
 [![iptables](https://img.shields.io/badge/iptables-GPL-red)](https://netfilter.org/projects/iptables/index.html)  
 
 
