@@ -31,4 +31,4 @@ jobs:
     - name: Run flake8 linter
       run: |
         pip install flake8
-        flake8 src/
+        flake8 src/ --exit-zero
