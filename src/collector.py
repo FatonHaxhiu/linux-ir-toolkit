@@ -5,6 +5,7 @@ from datetime import datetime
 import tarfile
 import argparse
 
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Linux Forensics + Incident Response Toolkit")
     parser.add_argument('--output', '-o', default=None, help="Output directory (default: timestamped)")
@@ -16,14 +17,17 @@ def parse_args():
 ARTIFACT_DIR = f"artifacts_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 os.makedirs(ARTIFACT_DIR, exist_ok=True)
 
+
 def save_command_output(cmd, outfile):
     with open(os.path.join(ARTIFACT_DIR, outfile), 'w') as f:
         subprocess.run(cmd, stdout=f, stderr=subprocess.DEVNULL, text=True)
+
 
 def save_file_copy(src, dest):
     if os.path.exists(src):
         with open(src, 'r') as f_src, open(os.path.join(ARTIFACT_DIR, dest), 'w') as f_dst:
             f_dst.write(f_src.read())
+
 
 def compute_hash(filepath):
     sha256 = hashlib.sha256()
@@ -32,31 +36,34 @@ def compute_hash(filepath):
             sha256.update(chunk)
     return sha256.hexdigest()
 
+
 def package_artifacts():
     archive_name = ARTIFACT_DIR + '.tar.gz'
     with tarfile.open(archive_name, 'w:gz') as tar:
         tar.add(ARTIFACT_DIR)
-    print(f"Artifacts packaged into {archive_name}")
+    print("Artifacts packaged into {}".format(archive_name))
+
 
 def collect_cron_jobs():
     save_command_output(['crontab', '-l'], 'crontab.txt')
     save_command_output(['ls', '-lR', '/etc/cron*'], 'cron_dirs.txt')
 
+
 def generate_report():
     report_path = os.path.join(ARTIFACT_DIR, 'report.md')
     with open(report_path, 'w') as f:
-        f.write(f"# Incident Response Report\n\n")
-        f.write(f"Generated on: {datetime.now()}\n\n")
-        f.write(f"## Collected Artifacts\n")
+        f.write("# Incident Response Report\n\n")
+        f.write("Generated on: {}\n\n".format(datetime.now()))
+        f.write("## Collected Artifacts\n")
         for root, _, files in os.walk(ARTIFACT_DIR):
             for file in files:
                 if file != 'report.md':
-                    f.write(f"- {file}\n")
-
+                    f.write("- {}\n".format(file))
 
 
 def main():
     args = parse_args()
+
     global ARTIFACT_DIR
     if args.output:
         ARTIFACT_DIR = args.output
@@ -64,12 +71,16 @@ def main():
         ARTIFACT_DIR = f"artifacts_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 
     os.makedirs(ARTIFACT_DIR, exist_ok=True)
+
     # Collect process list
     save_command_output(['ps', 'auxf'], 'processes.txt')
+
     # Collect network info
     save_command_output(['netstat', '-tulpen'], 'netstat.txt')
+
     # Collect open files
     save_command_output(['lsof'], 'lsof.txt')
+
     # Collect kernel modules and messages
     save_command_output(['lsmod'], 'lsmod.txt')
     save_command_output(['dmesg', '--ctime'], 'dmesg.txt')
@@ -78,6 +89,7 @@ def main():
     save_file_copy('/etc/passwd', 'passwd')
     save_file_copy('/etc/shadow', 'shadow')
     save_file_copy('/etc/sudoers', 'sudoers')
+
     # Logs
     save_file_copy('/var/log/auth.log', 'auth.log')
     save_file_copy('/var/log/syslog', 'syslog')
@@ -99,10 +111,11 @@ def main():
     # Package all artifacts into a .tar.gz archive
     if args.package:
         package_artifacts()
-    
+
     collect_cron_jobs()
 
     generate_report()
-    
+
+
 if __name__ == '__main__':
     main()
