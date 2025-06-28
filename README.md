@@ -55,5 +55,12 @@ The toolkit collects processes, network info, configuration files, logs, user ac
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/linux-ir-toolkit.git
+   git clone https://github.com/FatonHaxhiu/linux-ir-toolkit.git
    cd linux-ir-toolkit
+
+## Usage
+
+Run the toolkit using Python 3:
+
+```bash
+python3 src/collector.py [options]
