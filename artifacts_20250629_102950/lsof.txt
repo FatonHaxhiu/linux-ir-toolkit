@@ -1,0 +1,503 @@
+COMMAND   PID TID TASKCMD               USER   FD      TYPE             DEVICE SIZE/OFF             NODE NAME
+systemd     1                           root  cwd   unknown                                              /proc/1/cwd (readlink: Permission denied)
+systemd     1                           root  rtd   unknown                                              /proc/1/root (readlink: Permission denied)
+systemd     1                           root  txt   unknown                                              /proc/1/exe (readlink: Permission denied)
+systemd     1                           root NOFD                                                        /proc/1/fd (opendir: Permission denied)
+init        6                           root  cwd   unknown                                              /proc/6/cwd (readlink: Permission denied)
+init        6                           root  rtd   unknown                                              /proc/6/root (readlink: Permission denied)
+init        6                           root  txt   unknown                                              /proc/6/exe (readlink: Permission denied)
+init        6                           root NOFD                                                        /proc/6/fd (opendir: Permission denied)
+init        6   7 init                  root  cwd   unknown                                              /proc/6/task/7/cwd (readlink: Permission denied)
+init        6   7 init                  root  rtd   unknown                                              /proc/6/task/7/root (readlink: Permission denied)
+init        6   7 init                  root  txt   unknown                                              /proc/6/task/7/exe (readlink: Permission denied)
+init        6   7 init                  root NOFD                                                        /proc/6/task/7/fd (opendir: Permission denied)
+systemd-j  62                           root  cwd   unknown                                              /proc/62/cwd (readlink: Permission denied)
+systemd-j  62                           root  rtd   unknown                                              /proc/62/root (readlink: Permission denied)
+systemd-j  62                           root  txt   unknown                                              /proc/62/exe (readlink: Permission denied)
+systemd-j  62                           root NOFD                                                        /proc/62/fd (opendir: Permission denied)
+systemd-u  90                           root  cwd   unknown                                              /proc/90/cwd (readlink: Permission denied)
+systemd-u  90                           root  rtd   unknown                                              /proc/90/root (readlink: Permission denied)
+systemd-u  90                           root  txt   unknown                                              /proc/90/exe (readlink: Permission denied)
+systemd-u  90                           root NOFD                                                        /proc/90/fd (opendir: Permission denied)
+systemd-r  93                systemd-resolve  cwd   unknown                                              /proc/93/cwd (readlink: Permission denied)
+systemd-r  93                systemd-resolve  rtd   unknown                                              /proc/93/root (readlink: Permission denied)
+systemd-r  93                systemd-resolve  txt   unknown                                              /proc/93/exe (readlink: Permission denied)
+systemd-r  93                systemd-resolve NOFD                                                        /proc/93/fd (opendir: Permission denied)
+systemd-t  94               systemd-timesync  cwd   unknown                                              /proc/94/cwd (readlink: Permission denied)
+systemd-t  94               systemd-timesync  rtd   unknown                                              /proc/94/root (readlink: Permission denied)
+systemd-t  94               systemd-timesync  txt   unknown                                              /proc/94/exe (readlink: Permission denied)
+systemd-t  94               systemd-timesync NOFD                                                        /proc/94/fd (opendir: Permission denied)
+systemd-t  94 172 sd-resolv systemd-timesync  cwd   unknown                                              /proc/94/task/172/cwd (readlink: Permission denied)
+systemd-t  94 172 sd-resolv systemd-timesync  rtd   unknown                                              /proc/94/task/172/root (readlink: Permission denied)
+systemd-t  94 172 sd-resolv systemd-timesync  txt   unknown                                              /proc/94/task/172/exe (readlink: Permission denied)
+systemd-t  94 172 sd-resolv systemd-timesync NOFD                                                        /proc/94/task/172/fd (opendir: Permission denied)
+cron      175                           root  cwd   unknown                                              /proc/175/cwd (readlink: Permission denied)
+cron      175                           root  rtd   unknown                                              /proc/175/root (readlink: Permission denied)
+cron      175                           root  txt   unknown                                              /proc/175/exe (readlink: Permission denied)
+cron      175                           root NOFD                                                        /proc/175/fd (opendir: Permission denied)
+dbus-daem 177                     messagebus  cwd   unknown                                              /proc/177/cwd (readlink: Permission denied)
+dbus-daem 177                     messagebus  rtd   unknown                                              /proc/177/root (readlink: Permission denied)
+dbus-daem 177                     messagebus  txt   unknown                                              /proc/177/exe (readlink: Permission denied)
+dbus-daem 177                     messagebus NOFD                                                        /proc/177/fd (opendir: Permission denied)
+networkd- 182                           root  cwd   unknown                                              /proc/182/cwd (readlink: Permission denied)
+networkd- 182                           root  rtd   unknown                                              /proc/182/root (readlink: Permission denied)
+networkd- 182                           root  txt   unknown                                              /proc/182/exe (readlink: Permission denied)
+networkd- 182                           root NOFD                                                        /proc/182/fd (opendir: Permission denied)
+rsyslogd  183                         syslog  cwd   unknown                                              /proc/183/cwd (readlink: Permission denied)
+rsyslogd  183                         syslog  rtd   unknown                                              /proc/183/root (readlink: Permission denied)
+rsyslogd  183                         syslog  txt   unknown                                              /proc/183/exe (readlink: Permission denied)
+rsyslogd  183                         syslog NOFD                                                        /proc/183/fd (opendir: Permission denied)
+rsyslogd  183 197 in:imuxso           syslog  cwd   unknown                                              /proc/183/task/197/cwd (readlink: Permission denied)
+rsyslogd  183 197 in:imuxso           syslog  rtd   unknown                                              /proc/183/task/197/root (readlink: Permission denied)
+rsyslogd  183 197 in:imuxso           syslog  txt   unknown                                              /proc/183/task/197/exe (readlink: Permission denied)
+rsyslogd  183 197 in:imuxso           syslog NOFD                                                        /proc/183/task/197/fd (opendir: Permission denied)
+rsyslogd  183 198 in:imklog           syslog  cwd   unknown                                              /proc/183/task/198/cwd (readlink: Permission denied)
+rsyslogd  183 198 in:imklog           syslog  rtd   unknown                                              /proc/183/task/198/root (readlink: Permission denied)
+rsyslogd  183 198 in:imklog           syslog  txt   unknown                                              /proc/183/task/198/exe (readlink: Permission denied)
+rsyslogd  183 198 in:imklog           syslog NOFD                                                        /proc/183/task/198/fd (opendir: Permission denied)
+rsyslogd  183 202 rs:main             syslog  cwd   unknown                                              /proc/183/task/202/cwd (readlink: Permission denied)
+rsyslogd  183 202 rs:main             syslog  rtd   unknown                                              /proc/183/task/202/root (readlink: Permission denied)
+rsyslogd  183 202 rs:main             syslog  txt   unknown                                              /proc/183/task/202/exe (readlink: Permission denied)
+rsyslogd  183 202 rs:main             syslog NOFD                                                        /proc/183/task/202/fd (opendir: Permission denied)
+systemd-l 186                           root  cwd   unknown                                              /proc/186/cwd (readlink: Permission denied)
+systemd-l 186                           root  rtd   unknown                                              /proc/186/root (readlink: Permission denied)
+systemd-l 186                           root  txt   unknown                                              /proc/186/exe (readlink: Permission denied)
+systemd-l 186                           root NOFD                                                        /proc/186/fd (opendir: Permission denied)
+agetty    220                           root  cwd   unknown                                              /proc/220/cwd (readlink: Permission denied)
+agetty    220                           root  rtd   unknown                                              /proc/220/root (readlink: Permission denied)
+agetty    220                           root  txt   unknown                                              /proc/220/exe (readlink: Permission denied)
+agetty    220                           root NOFD                                                        /proc/220/fd (opendir: Permission denied)
+agetty    227                           root  cwd   unknown                                              /proc/227/cwd (readlink: Permission denied)
+agetty    227                           root  rtd   unknown                                              /proc/227/root (readlink: Permission denied)
+agetty    227                           root  txt   unknown                                              /proc/227/exe (readlink: Permission denied)
+agetty    227                           root NOFD                                                        /proc/227/fd (opendir: Permission denied)
+apache2   235                           root  cwd   unknown                                              /proc/235/cwd (readlink: Permission denied)
+apache2   235                           root  rtd   unknown                                              /proc/235/root (readlink: Permission denied)
+apache2   235                           root  txt   unknown                                              /proc/235/exe (readlink: Permission denied)
+apache2   235                           root NOFD                                                        /proc/235/fd (opendir: Permission denied)
+apache2   236                       www-data  cwd   unknown                                              /proc/236/cwd (readlink: Permission denied)
+apache2   236                       www-data  rtd   unknown                                              /proc/236/root (readlink: Permission denied)
+apache2   236                       www-data  txt   unknown                                              /proc/236/exe (readlink: Permission denied)
+apache2   236                       www-data NOFD                                                        /proc/236/fd (opendir: Permission denied)
+apache2   236 267 apache2           www-data  cwd   unknown                                              /proc/236/task/267/cwd (readlink: Permission denied)
+apache2   236 267 apache2           www-data  rtd   unknown                                              /proc/236/task/267/root (readlink: Permission denied)
+apache2   236 267 apache2           www-data  txt   unknown                                              /proc/236/task/267/exe (readlink: Permission denied)
+apache2   236 267 apache2           www-data NOFD                                                        /proc/236/task/267/fd (opendir: Permission denied)
+apache2   236 268 apache2           www-data  cwd   unknown                                              /proc/236/task/268/cwd (readlink: Permission denied)
+apache2   236 268 apache2           www-data  rtd   unknown                                              /proc/236/task/268/root (readlink: Permission denied)
+apache2   236 268 apache2           www-data  txt   unknown                                              /proc/236/task/268/exe (readlink: Permission denied)
+apache2   236 268 apache2           www-data NOFD                                                        /proc/236/task/268/fd (opendir: Permission denied)
+apache2   236 269 apache2           www-data  cwd   unknown                                              /proc/236/task/269/cwd (readlink: Permission denied)
+apache2   236 269 apache2           www-data  rtd   unknown                                              /proc/236/task/269/root (readlink: Permission denied)
+apache2   236 269 apache2           www-data  txt   unknown                                              /proc/236/task/269/exe (readlink: Permission denied)
+apache2   236 269 apache2           www-data NOFD                                                        /proc/236/task/269/fd (opendir: Permission denied)
+apache2   236 270 apache2           www-data  cwd   unknown                                              /proc/236/task/270/cwd (readlink: Permission denied)
+apache2   236 270 apache2           www-data  rtd   unknown                                              /proc/236/task/270/root (readlink: Permission denied)
+apache2   236 270 apache2           www-data  txt   unknown                                              /proc/236/task/270/exe (readlink: Permission denied)
+apache2   236 270 apache2           www-data NOFD                                                        /proc/236/task/270/fd (opendir: Permission denied)
+apache2   236 271 apache2           www-data  cwd   unknown                                              /proc/236/task/271/cwd (readlink: Permission denied)
+apache2   236 271 apache2           www-data  rtd   unknown                                              /proc/236/task/271/root (readlink: Permission denied)
+apache2   236 271 apache2           www-data  txt   unknown                                              /proc/236/task/271/exe (readlink: Permission denied)
+apache2   236 271 apache2           www-data NOFD                                                        /proc/236/task/271/fd (opendir: Permission denied)
+apache2   236 272 apache2           www-data  cwd   unknown                                              /proc/236/task/272/cwd (readlink: Permission denied)
+apache2   236 272 apache2           www-data  rtd   unknown                                              /proc/236/task/272/root (readlink: Permission denied)
+apache2   236 272 apache2           www-data  txt   unknown                                              /proc/236/task/272/exe (readlink: Permission denied)
+apache2   236 272 apache2           www-data NOFD                                                        /proc/236/task/272/fd (opendir: Permission denied)
+apache2   236 273 apache2           www-data  cwd   unknown                                              /proc/236/task/273/cwd (readlink: Permission denied)
+apache2   236 273 apache2           www-data  rtd   unknown                                              /proc/236/task/273/root (readlink: Permission denied)
+apache2   236 273 apache2           www-data  txt   unknown                                              /proc/236/task/273/exe (readlink: Permission denied)
+apache2   236 273 apache2           www-data NOFD                                                        /proc/236/task/273/fd (opendir: Permission denied)
+apache2   236 279 apache2           www-data  cwd   unknown                                              /proc/236/task/279/cwd (readlink: Permission denied)
+apache2   236 279 apache2           www-data  rtd   unknown                                              /proc/236/task/279/root (readlink: Permission denied)
+apache2   236 279 apache2           www-data  txt   unknown                                              /proc/236/task/279/exe (readlink: Permission denied)
+apache2   236 279 apache2           www-data NOFD                                                        /proc/236/task/279/fd (opendir: Permission denied)
+apache2   236 280 apache2           www-data  cwd   unknown                                              /proc/236/task/280/cwd (readlink: Permission denied)
+apache2   236 280 apache2           www-data  rtd   unknown                                              /proc/236/task/280/root (readlink: Permission denied)
+apache2   236 280 apache2           www-data  txt   unknown                                              /proc/236/task/280/exe (readlink: Permission denied)
+apache2   236 280 apache2           www-data NOFD                                                        /proc/236/task/280/fd (opendir: Permission denied)
+apache2   236 281 apache2           www-data  cwd   unknown                                              /proc/236/task/281/cwd (readlink: Permission denied)
+apache2   236 281 apache2           www-data  rtd   unknown                                              /proc/236/task/281/root (readlink: Permission denied)
+apache2   236 281 apache2           www-data  txt   unknown                                              /proc/236/task/281/exe (readlink: Permission denied)
+apache2   236 281 apache2           www-data NOFD                                                        /proc/236/task/281/fd (opendir: Permission denied)
+apache2   236 283 apache2           www-data  cwd   unknown                                              /proc/236/task/283/cwd (readlink: Permission denied)
+apache2   236 283 apache2           www-data  rtd   unknown                                              /proc/236/task/283/root (readlink: Permission denied)
+apache2   236 283 apache2           www-data  txt   unknown                                              /proc/236/task/283/exe (readlink: Permission denied)
+apache2   236 283 apache2           www-data NOFD                                                        /proc/236/task/283/fd (opendir: Permission denied)
+apache2   236 284 apache2           www-data  cwd   unknown                                              /proc/236/task/284/cwd (readlink: Permission denied)
+apache2   236 284 apache2           www-data  rtd   unknown                                              /proc/236/task/284/root (readlink: Permission denied)
+apache2   236 284 apache2           www-data  txt   unknown                                              /proc/236/task/284/exe (readlink: Permission denied)
+apache2   236 284 apache2           www-data NOFD                                                        /proc/236/task/284/fd (opendir: Permission denied)
+apache2   236 285 apache2           www-data  cwd   unknown                                              /proc/236/task/285/cwd (readlink: Permission denied)
+apache2   236 285 apache2           www-data  rtd   unknown                                              /proc/236/task/285/root (readlink: Permission denied)
+apache2   236 285 apache2           www-data  txt   unknown                                              /proc/236/task/285/exe (readlink: Permission denied)
+apache2   236 285 apache2           www-data NOFD                                                        /proc/236/task/285/fd (opendir: Permission denied)
+apache2   236 286 apache2           www-data  cwd   unknown                                              /proc/236/task/286/cwd (readlink: Permission denied)
+apache2   236 286 apache2           www-data  rtd   unknown                                              /proc/236/task/286/root (readlink: Permission denied)
+apache2   236 286 apache2           www-data  txt   unknown                                              /proc/236/task/286/exe (readlink: Permission denied)
+apache2   236 286 apache2           www-data NOFD                                                        /proc/236/task/286/fd (opendir: Permission denied)
+apache2   236 287 apache2           www-data  cwd   unknown                                              /proc/236/task/287/cwd (readlink: Permission denied)
+apache2   236 287 apache2           www-data  rtd   unknown                                              /proc/236/task/287/root (readlink: Permission denied)
+apache2   236 287 apache2           www-data  txt   unknown                                              /proc/236/task/287/exe (readlink: Permission denied)
+apache2   236 287 apache2           www-data NOFD                                                        /proc/236/task/287/fd (opendir: Permission denied)
+apache2   236 288 apache2           www-data  cwd   unknown                                              /proc/236/task/288/cwd (readlink: Permission denied)
+apache2   236 288 apache2           www-data  rtd   unknown                                              /proc/236/task/288/root (readlink: Permission denied)
+apache2   236 288 apache2           www-data  txt   unknown                                              /proc/236/task/288/exe (readlink: Permission denied)
+apache2   236 288 apache2           www-data NOFD                                                        /proc/236/task/288/fd (opendir: Permission denied)
+apache2   236 289 apache2           www-data  cwd   unknown                                              /proc/236/task/289/cwd (readlink: Permission denied)
+apache2   236 289 apache2           www-data  rtd   unknown                                              /proc/236/task/289/root (readlink: Permission denied)
+apache2   236 289 apache2           www-data  txt   unknown                                              /proc/236/task/289/exe (readlink: Permission denied)
+apache2   236 289 apache2           www-data NOFD                                                        /proc/236/task/289/fd (opendir: Permission denied)
+apache2   236 290 apache2           www-data  cwd   unknown                                              /proc/236/task/290/cwd (readlink: Permission denied)
+apache2   236 290 apache2           www-data  rtd   unknown                                              /proc/236/task/290/root (readlink: Permission denied)
+apache2   236 290 apache2           www-data  txt   unknown                                              /proc/236/task/290/exe (readlink: Permission denied)
+apache2   236 290 apache2           www-data NOFD                                                        /proc/236/task/290/fd (opendir: Permission denied)
+apache2   236 291 apache2           www-data  cwd   unknown                                              /proc/236/task/291/cwd (readlink: Permission denied)
+apache2   236 291 apache2           www-data  rtd   unknown                                              /proc/236/task/291/root (readlink: Permission denied)
+apache2   236 291 apache2           www-data  txt   unknown                                              /proc/236/task/291/exe (readlink: Permission denied)
+apache2   236 291 apache2           www-data NOFD                                                        /proc/236/task/291/fd (opendir: Permission denied)
+apache2   236 292 apache2           www-data  cwd   unknown                                              /proc/236/task/292/cwd (readlink: Permission denied)
+apache2   236 292 apache2           www-data  rtd   unknown                                              /proc/236/task/292/root (readlink: Permission denied)
+apache2   236 292 apache2           www-data  txt   unknown                                              /proc/236/task/292/exe (readlink: Permission denied)
+apache2   236 292 apache2           www-data NOFD                                                        /proc/236/task/292/fd (opendir: Permission denied)
+apache2   236 293 apache2           www-data  cwd   unknown                                              /proc/236/task/293/cwd (readlink: Permission denied)
+apache2   236 293 apache2           www-data  rtd   unknown                                              /proc/236/task/293/root (readlink: Permission denied)
+apache2   236 293 apache2           www-data  txt   unknown                                              /proc/236/task/293/exe (readlink: Permission denied)
+apache2   236 293 apache2           www-data NOFD                                                        /proc/236/task/293/fd (opendir: Permission denied)
+apache2   236 294 apache2           www-data  cwd   unknown                                              /proc/236/task/294/cwd (readlink: Permission denied)
+apache2   236 294 apache2           www-data  rtd   unknown                                              /proc/236/task/294/root (readlink: Permission denied)
+apache2   236 294 apache2           www-data  txt   unknown                                              /proc/236/task/294/exe (readlink: Permission denied)
+apache2   236 294 apache2           www-data NOFD                                                        /proc/236/task/294/fd (opendir: Permission denied)
+apache2   236 295 apache2           www-data  cwd   unknown                                              /proc/236/task/295/cwd (readlink: Permission denied)
+apache2   236 295 apache2           www-data  rtd   unknown                                              /proc/236/task/295/root (readlink: Permission denied)
+apache2   236 295 apache2           www-data  txt   unknown                                              /proc/236/task/295/exe (readlink: Permission denied)
+apache2   236 295 apache2           www-data NOFD                                                        /proc/236/task/295/fd (opendir: Permission denied)
+apache2   236 296 apache2           www-data  cwd   unknown                                              /proc/236/task/296/cwd (readlink: Permission denied)
+apache2   236 296 apache2           www-data  rtd   unknown                                              /proc/236/task/296/root (readlink: Permission denied)
+apache2   236 296 apache2           www-data  txt   unknown                                              /proc/236/task/296/exe (readlink: Permission denied)
+apache2   236 296 apache2           www-data NOFD                                                        /proc/236/task/296/fd (opendir: Permission denied)
+apache2   236 297 apache2           www-data  cwd   unknown                                              /proc/236/task/297/cwd (readlink: Permission denied)
+apache2   236 297 apache2           www-data  rtd   unknown                                              /proc/236/task/297/root (readlink: Permission denied)
+apache2   236 297 apache2           www-data  txt   unknown                                              /proc/236/task/297/exe (readlink: Permission denied)
+apache2   236 297 apache2           www-data NOFD                                                        /proc/236/task/297/fd (opendir: Permission denied)
+apache2   236 298 apache2           www-data  cwd   unknown                                              /proc/236/task/298/cwd (readlink: Permission denied)
+apache2   236 298 apache2           www-data  rtd   unknown                                              /proc/236/task/298/root (readlink: Permission denied)
+apache2   236 298 apache2           www-data  txt   unknown                                              /proc/236/task/298/exe (readlink: Permission denied)
+apache2   236 298 apache2           www-data NOFD                                                        /proc/236/task/298/fd (opendir: Permission denied)
+apache2   237                       www-data  cwd   unknown                                              /proc/237/cwd (readlink: Permission denied)
+apache2   237                       www-data  rtd   unknown                                              /proc/237/root (readlink: Permission denied)
+apache2   237                       www-data  txt   unknown                                              /proc/237/exe (readlink: Permission denied)
+apache2   237                       www-data NOFD                                                        /proc/237/fd (opendir: Permission denied)
+apache2   237 239 apache2           www-data  cwd   unknown                                              /proc/237/task/239/cwd (readlink: Permission denied)
+apache2   237 239 apache2           www-data  rtd   unknown                                              /proc/237/task/239/root (readlink: Permission denied)
+apache2   237 239 apache2           www-data  txt   unknown                                              /proc/237/task/239/exe (readlink: Permission denied)
+apache2   237 239 apache2           www-data NOFD                                                        /proc/237/task/239/fd (opendir: Permission denied)
+apache2   237 240 apache2           www-data  cwd   unknown                                              /proc/237/task/240/cwd (readlink: Permission denied)
+apache2   237 240 apache2           www-data  rtd   unknown                                              /proc/237/task/240/root (readlink: Permission denied)
+apache2   237 240 apache2           www-data  txt   unknown                                              /proc/237/task/240/exe (readlink: Permission denied)
+apache2   237 240 apache2           www-data NOFD                                                        /proc/237/task/240/fd (opendir: Permission denied)
+apache2   237 241 apache2           www-data  cwd   unknown                                              /proc/237/task/241/cwd (readlink: Permission denied)
+apache2   237 241 apache2           www-data  rtd   unknown                                              /proc/237/task/241/root (readlink: Permission denied)
+apache2   237 241 apache2           www-data  txt   unknown                                              /proc/237/task/241/exe (readlink: Permission denied)
+apache2   237 241 apache2           www-data NOFD                                                        /proc/237/task/241/fd (opendir: Permission denied)
+apache2   237 242 apache2           www-data  cwd   unknown                                              /proc/237/task/242/cwd (readlink: Permission denied)
+apache2   237 242 apache2           www-data  rtd   unknown                                              /proc/237/task/242/root (readlink: Permission denied)
+apache2   237 242 apache2           www-data  txt   unknown                                              /proc/237/task/242/exe (readlink: Permission denied)
+apache2   237 242 apache2           www-data NOFD                                                        /proc/237/task/242/fd (opendir: Permission denied)
+apache2   237 243 apache2           www-data  cwd   unknown                                              /proc/237/task/243/cwd (readlink: Permission denied)
+apache2   237 243 apache2           www-data  rtd   unknown                                              /proc/237/task/243/root (readlink: Permission denied)
+apache2   237 243 apache2           www-data  txt   unknown                                              /proc/237/task/243/exe (readlink: Permission denied)
+apache2   237 243 apache2           www-data NOFD                                                        /proc/237/task/243/fd (opendir: Permission denied)
+apache2   237 244 apache2           www-data  cwd   unknown                                              /proc/237/task/244/cwd (readlink: Permission denied)
+apache2   237 244 apache2           www-data  rtd   unknown                                              /proc/237/task/244/root (readlink: Permission denied)
+apache2   237 244 apache2           www-data  txt   unknown                                              /proc/237/task/244/exe (readlink: Permission denied)
+apache2   237 244 apache2           www-data NOFD                                                        /proc/237/task/244/fd (opendir: Permission denied)
+apache2   237 245 apache2           www-data  cwd   unknown                                              /proc/237/task/245/cwd (readlink: Permission denied)
+apache2   237 245 apache2           www-data  rtd   unknown                                              /proc/237/task/245/root (readlink: Permission denied)
+apache2   237 245 apache2           www-data  txt   unknown                                              /proc/237/task/245/exe (readlink: Permission denied)
+apache2   237 245 apache2           www-data NOFD                                                        /proc/237/task/245/fd (opendir: Permission denied)
+apache2   237 246 apache2           www-data  cwd   unknown                                              /proc/237/task/246/cwd (readlink: Permission denied)
+apache2   237 246 apache2           www-data  rtd   unknown                                              /proc/237/task/246/root (readlink: Permission denied)
+apache2   237 246 apache2           www-data  txt   unknown                                              /proc/237/task/246/exe (readlink: Permission denied)
+apache2   237 246 apache2           www-data NOFD                                                        /proc/237/task/246/fd (opendir: Permission denied)
+apache2   237 247 apache2           www-data  cwd   unknown                                              /proc/237/task/247/cwd (readlink: Permission denied)
+apache2   237 247 apache2           www-data  rtd   unknown                                              /proc/237/task/247/root (readlink: Permission denied)
+apache2   237 247 apache2           www-data  txt   unknown                                              /proc/237/task/247/exe (readlink: Permission denied)
+apache2   237 247 apache2           www-data NOFD                                                        /proc/237/task/247/fd (opendir: Permission denied)
+apache2   237 248 apache2           www-data  cwd   unknown                                              /proc/237/task/248/cwd (readlink: Permission denied)
+apache2   237 248 apache2           www-data  rtd   unknown                                              /proc/237/task/248/root (readlink: Permission denied)
+apache2   237 248 apache2           www-data  txt   unknown                                              /proc/237/task/248/exe (readlink: Permission denied)
+apache2   237 248 apache2           www-data NOFD                                                        /proc/237/task/248/fd (opendir: Permission denied)
+apache2   237 249 apache2           www-data  cwd   unknown                                              /proc/237/task/249/cwd (readlink: Permission denied)
+apache2   237 249 apache2           www-data  rtd   unknown                                              /proc/237/task/249/root (readlink: Permission denied)
+apache2   237 249 apache2           www-data  txt   unknown                                              /proc/237/task/249/exe (readlink: Permission denied)
+apache2   237 249 apache2           www-data NOFD                                                        /proc/237/task/249/fd (opendir: Permission denied)
+apache2   237 250 apache2           www-data  cwd   unknown                                              /proc/237/task/250/cwd (readlink: Permission denied)
+apache2   237 250 apache2           www-data  rtd   unknown                                              /proc/237/task/250/root (readlink: Permission denied)
+apache2   237 250 apache2           www-data  txt   unknown                                              /proc/237/task/250/exe (readlink: Permission denied)
+apache2   237 250 apache2           www-data NOFD                                                        /proc/237/task/250/fd (opendir: Permission denied)
+apache2   237 251 apache2           www-data  cwd   unknown                                              /proc/237/task/251/cwd (readlink: Permission denied)
+apache2   237 251 apache2           www-data  rtd   unknown                                              /proc/237/task/251/root (readlink: Permission denied)
+apache2   237 251 apache2           www-data  txt   unknown                                              /proc/237/task/251/exe (readlink: Permission denied)
+apache2   237 251 apache2           www-data NOFD                                                        /proc/237/task/251/fd (opendir: Permission denied)
+apache2   237 252 apache2           www-data  cwd   unknown                                              /proc/237/task/252/cwd (readlink: Permission denied)
+apache2   237 252 apache2           www-data  rtd   unknown                                              /proc/237/task/252/root (readlink: Permission denied)
+apache2   237 252 apache2           www-data  txt   unknown                                              /proc/237/task/252/exe (readlink: Permission denied)
+apache2   237 252 apache2           www-data NOFD                                                        /proc/237/task/252/fd (opendir: Permission denied)
+apache2   237 253 apache2           www-data  cwd   unknown                                              /proc/237/task/253/cwd (readlink: Permission denied)
+apache2   237 253 apache2           www-data  rtd   unknown                                              /proc/237/task/253/root (readlink: Permission denied)
+apache2   237 253 apache2           www-data  txt   unknown                                              /proc/237/task/253/exe (readlink: Permission denied)
+apache2   237 253 apache2           www-data NOFD                                                        /proc/237/task/253/fd (opendir: Permission denied)
+apache2   237 254 apache2           www-data  cwd   unknown                                              /proc/237/task/254/cwd (readlink: Permission denied)
+apache2   237 254 apache2           www-data  rtd   unknown                                              /proc/237/task/254/root (readlink: Permission denied)
+apache2   237 254 apache2           www-data  txt   unknown                                              /proc/237/task/254/exe (readlink: Permission denied)
+apache2   237 254 apache2           www-data NOFD                                                        /proc/237/task/254/fd (opendir: Permission denied)
+apache2   237 255 apache2           www-data  cwd   unknown                                              /proc/237/task/255/cwd (readlink: Permission denied)
+apache2   237 255 apache2           www-data  rtd   unknown                                              /proc/237/task/255/root (readlink: Permission denied)
+apache2   237 255 apache2           www-data  txt   unknown                                              /proc/237/task/255/exe (readlink: Permission denied)
+apache2   237 255 apache2           www-data NOFD                                                        /proc/237/task/255/fd (opendir: Permission denied)
+apache2   237 256 apache2           www-data  cwd   unknown                                              /proc/237/task/256/cwd (readlink: Permission denied)
+apache2   237 256 apache2           www-data  rtd   unknown                                              /proc/237/task/256/root (readlink: Permission denied)
+apache2   237 256 apache2           www-data  txt   unknown                                              /proc/237/task/256/exe (readlink: Permission denied)
+apache2   237 256 apache2           www-data NOFD                                                        /proc/237/task/256/fd (opendir: Permission denied)
+apache2   237 257 apache2           www-data  cwd   unknown                                              /proc/237/task/257/cwd (readlink: Permission denied)
+apache2   237 257 apache2           www-data  rtd   unknown                                              /proc/237/task/257/root (readlink: Permission denied)
+apache2   237 257 apache2           www-data  txt   unknown                                              /proc/237/task/257/exe (readlink: Permission denied)
+apache2   237 257 apache2           www-data NOFD                                                        /proc/237/task/257/fd (opendir: Permission denied)
+apache2   237 258 apache2           www-data  cwd   unknown                                              /proc/237/task/258/cwd (readlink: Permission denied)
+apache2   237 258 apache2           www-data  rtd   unknown                                              /proc/237/task/258/root (readlink: Permission denied)
+apache2   237 258 apache2           www-data  txt   unknown                                              /proc/237/task/258/exe (readlink: Permission denied)
+apache2   237 258 apache2           www-data NOFD                                                        /proc/237/task/258/fd (opendir: Permission denied)
+apache2   237 259 apache2           www-data  cwd   unknown                                              /proc/237/task/259/cwd (readlink: Permission denied)
+apache2   237 259 apache2           www-data  rtd   unknown                                              /proc/237/task/259/root (readlink: Permission denied)
+apache2   237 259 apache2           www-data  txt   unknown                                              /proc/237/task/259/exe (readlink: Permission denied)
+apache2   237 259 apache2           www-data NOFD                                                        /proc/237/task/259/fd (opendir: Permission denied)
+apache2   237 260 apache2           www-data  cwd   unknown                                              /proc/237/task/260/cwd (readlink: Permission denied)
+apache2   237 260 apache2           www-data  rtd   unknown                                              /proc/237/task/260/root (readlink: Permission denied)
+apache2   237 260 apache2           www-data  txt   unknown                                              /proc/237/task/260/exe (readlink: Permission denied)
+apache2   237 260 apache2           www-data NOFD                                                        /proc/237/task/260/fd (opendir: Permission denied)
+apache2   237 261 apache2           www-data  cwd   unknown                                              /proc/237/task/261/cwd (readlink: Permission denied)
+apache2   237 261 apache2           www-data  rtd   unknown                                              /proc/237/task/261/root (readlink: Permission denied)
+apache2   237 261 apache2           www-data  txt   unknown                                              /proc/237/task/261/exe (readlink: Permission denied)
+apache2   237 261 apache2           www-data NOFD                                                        /proc/237/task/261/fd (opendir: Permission denied)
+apache2   237 262 apache2           www-data  cwd   unknown                                              /proc/237/task/262/cwd (readlink: Permission denied)
+apache2   237 262 apache2           www-data  rtd   unknown                                              /proc/237/task/262/root (readlink: Permission denied)
+apache2   237 262 apache2           www-data  txt   unknown                                              /proc/237/task/262/exe (readlink: Permission denied)
+apache2   237 262 apache2           www-data NOFD                                                        /proc/237/task/262/fd (opendir: Permission denied)
+apache2   237 263 apache2           www-data  cwd   unknown                                              /proc/237/task/263/cwd (readlink: Permission denied)
+apache2   237 263 apache2           www-data  rtd   unknown                                              /proc/237/task/263/root (readlink: Permission denied)
+apache2   237 263 apache2           www-data  txt   unknown                                              /proc/237/task/263/exe (readlink: Permission denied)
+apache2   237 263 apache2           www-data NOFD                                                        /proc/237/task/263/fd (opendir: Permission denied)
+apache2   237 264 apache2           www-data  cwd   unknown                                              /proc/237/task/264/cwd (readlink: Permission denied)
+apache2   237 264 apache2           www-data  rtd   unknown                                              /proc/237/task/264/root (readlink: Permission denied)
+apache2   237 264 apache2           www-data  txt   unknown                                              /proc/237/task/264/exe (readlink: Permission denied)
+apache2   237 264 apache2           www-data NOFD                                                        /proc/237/task/264/fd (opendir: Permission denied)
+unattende 278                           root  cwd   unknown                                              /proc/278/cwd (readlink: Permission denied)
+unattende 278                           root  rtd   unknown                                              /proc/278/root (readlink: Permission denied)
+unattende 278                           root  txt   unknown                                              /proc/278/exe (readlink: Permission denied)
+unattende 278                           root NOFD                                                        /proc/278/fd (opendir: Permission denied)
+unattende 278 327 gmain                 root  cwd   unknown                                              /proc/278/task/327/cwd (readlink: Permission denied)
+unattende 278 327 gmain                 root  rtd   unknown                                              /proc/278/task/327/root (readlink: Permission denied)
+unattende 278 327 gmain                 root  txt   unknown                                              /proc/278/task/327/exe (readlink: Permission denied)
+unattende 278 327 gmain                 root NOFD                                                        /proc/278/task/327/fd (opendir: Permission denied)
+systemd-t 326                           root  cwd   unknown                                              /proc/326/cwd (readlink: Permission denied)
+systemd-t 326                           root  rtd   unknown                                              /proc/326/root (readlink: Permission denied)
+systemd-t 326                           root  txt   unknown                                              /proc/326/exe (readlink: Permission denied)
+systemd-t 326                           root NOFD                                                        /proc/326/fd (opendir: Permission denied)
+SessionLe 367                           root  cwd   unknown                                              /proc/367/cwd (readlink: Permission denied)
+SessionLe 367                           root  rtd   unknown                                              /proc/367/root (readlink: Permission denied)
+SessionLe 367                           root  txt   unknown                                              /proc/367/exe (readlink: Permission denied)
+SessionLe 367                           root NOFD                                                        /proc/367/fd (opendir: Permission denied)
+Relay(369 368                           root  cwd   unknown                                              /proc/368/cwd (readlink: Permission denied)
+Relay(369 368                           root  rtd   unknown                                              /proc/368/root (readlink: Permission denied)
+Relay(369 368                           root  txt   unknown                                              /proc/368/exe (readlink: Permission denied)
+Relay(369 368                           root NOFD                                                        /proc/368/fd (opendir: Permission denied)
+bash      369                           toni  cwd       DIR               0,82     4096 7599824371266740 /mnt/c/Users/faton/OneDrive/Documents/GitHub/linux-ir-toolkit
+bash      369                           toni  rtd       DIR               8,32     4096                2 /
+bash      369                           toni  txt       REG               8,32  1396520             1462 /usr/bin/bash
+bash      369                           toni  mem       REG               8,32   353616            41948 /usr/lib/locale/C.utf8/LC_CTYPE
+bash      369                           toni  mem       REG               8,32       50            41954 /usr/lib/locale/C.utf8/LC_NUMERIC
+bash      369                           toni  mem       REG               8,32     3360            41957 /usr/lib/locale/C.utf8/LC_TIME
+bash      369                           toni  mem       REG               8,32     1406            41947 /usr/lib/locale/C.utf8/LC_COLLATE
+bash      369                           toni  mem       REG               8,32      270            41952 /usr/lib/locale/C.utf8/LC_MONETARY
+bash      369                           toni  mem       REG               8,32    27002            52334 /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+bash      369                           toni  mem       REG               8,32  2220400            52051 /usr/lib/x86_64-linux-gnu/libc.so.6
+bash      369                           toni  mem       REG               8,32   200136            12062 /usr/lib/x86_64-linux-gnu/libtinfo.so.6.3
+bash      369                           toni  mem       REG               8,32       48            41951 /usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES
+bash      369                           toni  mem       REG               8,32       34            41955 /usr/lib/locale/C.utf8/LC_PAPER
+bash      369                           toni  mem       REG               8,32       62            41953 /usr/lib/locale/C.utf8/LC_NAME
+bash      369                           toni  mem       REG               8,32      127            41946 /usr/lib/locale/C.utf8/LC_ADDRESS
+bash      369                           toni  mem       REG               8,32       47            41956 /usr/lib/locale/C.utf8/LC_TELEPHONE
+bash      369                           toni  mem       REG               8,32       23            41950 /usr/lib/locale/C.utf8/LC_MEASUREMENT
+bash      369                           toni  mem       REG               8,32   240936            52048 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+bash      369                           toni  mem       REG               8,32      258            41949 /usr/lib/locale/C.utf8/LC_IDENTIFICATION
+bash      369                           toni    0u      CHR              136,0      0t0                3 /dev/pts/0
+bash      369                           toni    1u      CHR              136,0      0t0                3 /dev/pts/0
+bash      369                           toni    2u      CHR              136,0      0t0                3 /dev/pts/0
+bash      369                           toni  255u      CHR              136,0      0t0                3 /dev/pts/0
+login     370                           root  cwd   unknown                                              /proc/370/cwd (readlink: Permission denied)
+login     370                           root  rtd   unknown                                              /proc/370/root (readlink: Permission denied)
+login     370                           root  txt   unknown                                              /proc/370/exe (readlink: Permission denied)
+login     370                           root NOFD                                                        /proc/370/fd (opendir: Permission denied)
+systemd   459                           toni  cwd       DIR               8,32     4096                2 /
+systemd   459                           toni  rtd       DIR               8,32     4096                2 /
+systemd   459                           toni  txt       REG               8,32  1849992            66021 /usr/lib/systemd/systemd
+systemd   459                           toni  mem       REG               8,32   149760            11803 /usr/lib/x86_64-linux-gnu/libgpg-error.so.0.32.1
+systemd   459                           toni  mem       REG               8,32    27072            11679 /usr/lib/x86_64-linux-gnu/libcap-ng.so.0.0.0
+systemd   459                           toni  mem       REG               8,32   613064            11983 /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.10.4
+systemd   459                           toni  mem       REG               8,32   170456            11886 /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5
+systemd   459                           toni  mem       REG               8,32   841808            12135 /usr/lib/x86_64-linux-gnu/libzstd.so.1.4.8
+systemd   459                           toni  mem       REG               8,32  4455728             2404 /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+systemd   459                           toni  mem       REG               8,32   125152            11884 /usr/lib/x86_64-linux-gnu/liblz4.so.1.9.3
+systemd   459                           toni  mem       REG               8,32    35440            11847 /usr/lib/x86_64-linux-gnu/libip4tc.so.2.0.0
+systemd   459                           toni  mem       REG               8,32  1296312            11777 /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.3.4
+systemd   459                           toni  mem       REG               8,32   198664            11691 /usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0
+systemd   459                           toni  mem       REG               8,32    39024            11552 /usr/lib/x86_64-linux-gnu/libcap.so.2.44
+systemd   459                           toni  mem       REG               8,32   220208            11658 /usr/lib/x86_64-linux-gnu/libblkid.so.1.1.0
+systemd   459                           toni  mem       REG               8,32    34888            11626 /usr/lib/x86_64-linux-gnu/libacl.so.1.1.2301
+systemd   459                           toni  mem       REG               8,32  2220400            52051 /usr/lib/x86_64-linux-gnu/libc.so.6
+systemd   459                           toni  mem       REG               8,32    80768            11629 /usr/lib/x86_64-linux-gnu/libapparmor.so.1.8.2
+systemd   459                           toni  mem       REG               8,32   108760            11868 /usr/lib/x86_64-linux-gnu/libkmod.so.2.3.7
+systemd   459                           toni  mem       REG               8,32   133200            11650 /usr/lib/x86_64-linux-gnu/libaudit.so.1.0.0
+systemd   459                           toni  mem       REG               8,32    67736            11956 /usr/lib/x86_64-linux-gnu/libpam.so.0.85.1
+systemd   459                           toni  mem       REG               8,32   273064            11904 /usr/lib/x86_64-linux-gnu/libmount.so.1.1.0
+systemd   459                           toni  mem       REG               8,32   166280            12026 /usr/lib/x86_64-linux-gnu/libselinux.so.1
+systemd   459                           toni  mem       REG               8,32   125360            12025 /usr/lib/x86_64-linux-gnu/libseccomp.so.2.5.3
+systemd   459                           toni  mem       REG               8,32  2840280            65841 /usr/lib/systemd/libsystemd-shared-249.so
+systemd   459                           toni  mem       REG               8,32   240936            52048 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+systemd   459                           toni    0r      CHR                1,3      0t0                3 /dev/null
+systemd   459                           toni    1u     unix 0x0000000000000000      0t0            19082 type=STREAM
+systemd   459                           toni    2u     unix 0x0000000000000000      0t0            19082 type=STREAM
+systemd   459                           toni    3u     unix 0x0000000000000000      0t0            19100 type=DGRAM
+systemd   459                           toni    4u  a_inode               0,13        0            17348 [eventpoll]
+systemd   459                           toni    5u  a_inode               0,13        0            17348 [signalfd]
+systemd   459                           toni    6r  a_inode               0,13        0            17348 inotify
+systemd   459                           toni    7r      DIR               0,21        0              731 /sys/fs/cgroup/unified/user.slice/user-1000.slice/user@1000.service
+systemd   459                           toni    8u  a_inode               0,13        0            17348 [timerfd]
+systemd   459                           toni    9u  a_inode               0,13        0            17348 [eventpoll]
+systemd   459                           toni   10r      REG               0,62        0            19105 /proc/459/mountinfo
+systemd   459                           toni   11r  a_inode               0,13        0            17348 inotify
+systemd   459                           toni   12u     unix 0x0000000000000000      0t0            19117 /run/user/1000/gnupg/S.dirmngr type=STREAM
+systemd   459                           toni   13r  a_inode               0,13        0            17348 inotify
+systemd   459                           toni   14u  netlink                         0t0            19106 KOBJECT_UEVENT
+systemd   459                           toni   15u     unix 0x0000000000000000      0t0            19108 /run/user/1000/systemd/notify type=DGRAM
+systemd   459                           toni   16u     unix 0x0000000000000000      0t0            19109 type=DGRAM
+systemd   459                           toni   17u     unix 0x0000000000000000      0t0            19110 type=DGRAM
+systemd   459                           toni   18u     unix 0x0000000000000000      0t0            19111 /run/user/1000/systemd/private type=STREAM
+systemd   459                           toni   19u     unix 0x0000000000000000      0t0            19113 type=STREAM
+systemd   459                           toni   20u  a_inode               0,13        0            17348 [timerfd]
+systemd   459                           toni   25u     unix 0x0000000000000000      0t0            19119 /run/user/1000/gnupg/S.gpg-agent.browser type=STREAM
+systemd   459                           toni   26u     unix 0x0000000000000000      0t0            19121 /run/user/1000/gnupg/S.gpg-agent.extra type=STREAM
+systemd   459                           toni   27u     unix 0x0000000000000000      0t0            19123 /run/user/1000/gnupg/S.gpg-agent.ssh type=STREAM
+systemd   459                           toni   28u     unix 0x0000000000000000      0t0            19125 /run/user/1000/gnupg/S.gpg-agent type=STREAM
+systemd   459                           toni   29u     unix 0x0000000000000000      0t0            19127 /run/user/1000/pk-debconf-socket type=STREAM
+systemd   459                           toni   30u     unix 0x0000000000000000      0t0            19129 /run/user/1000/snapd-session-agent.socket type=STREAM
+(sd-pam)  460                           toni  cwd   unknown                                              /proc/460/cwd (readlink: Permission denied)
+(sd-pam)  460                           toni  rtd   unknown                                              /proc/460/root (readlink: Permission denied)
+(sd-pam)  460                           toni  txt   unknown                                              /proc/460/exe (readlink: Permission denied)
+(sd-pam)  460                           toni NOFD                                                        /proc/460/fd (opendir: Permission denied)
+bash      465                           toni  cwd       DIR               8,32     4096              654 /home/toni
+bash      465                           toni  rtd       DIR               8,32     4096                2 /
+bash      465                           toni  txt       REG               8,32  1396520             1462 /usr/bin/bash
+bash      465                           toni  mem       REG               8,32   353616            41948 /usr/lib/locale/C.utf8/LC_CTYPE
+bash      465                           toni  mem       REG               8,32       50            41954 /usr/lib/locale/C.utf8/LC_NUMERIC
+bash      465                           toni  mem       REG               8,32     3360            41957 /usr/lib/locale/C.utf8/LC_TIME
+bash      465                           toni  mem       REG               8,32     1406            41947 /usr/lib/locale/C.utf8/LC_COLLATE
+bash      465                           toni  mem       REG               8,32      270            41952 /usr/lib/locale/C.utf8/LC_MONETARY
+bash      465                           toni  mem       REG               8,32    27002            52334 /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+bash      465                           toni  mem       REG               8,32  2220400            52051 /usr/lib/x86_64-linux-gnu/libc.so.6
+bash      465                           toni  mem       REG               8,32   200136            12062 /usr/lib/x86_64-linux-gnu/libtinfo.so.6.3
+bash      465                           toni  mem       REG               8,32       48            41951 /usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES
+bash      465                           toni  mem       REG               8,32       34            41955 /usr/lib/locale/C.utf8/LC_PAPER
+bash      465                           toni  mem       REG               8,32       62            41953 /usr/lib/locale/C.utf8/LC_NAME
+bash      465                           toni  mem       REG               8,32      127            41946 /usr/lib/locale/C.utf8/LC_ADDRESS
+bash      465                           toni  mem       REG               8,32       47            41956 /usr/lib/locale/C.utf8/LC_TELEPHONE
+bash      465                           toni  mem       REG               8,32       23            41950 /usr/lib/locale/C.utf8/LC_MEASUREMENT
+bash      465                           toni  mem       REG               8,32   240936            52048 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+bash      465                           toni  mem       REG               8,32      258            41949 /usr/lib/locale/C.utf8/LC_IDENTIFICATION
+bash      465                           toni    0u      CHR              136,1      0t0                4 /dev/pts/1
+bash      465                           toni    1u      CHR              136,1      0t0                4 /dev/pts/1
+bash      465                           toni    2u      CHR              136,1      0t0                4 /dev/pts/1
+bash      465                           toni  255u      CHR              136,1      0t0                4 /dev/pts/1
+systemd-u 502                           root  cwd   unknown                                              /proc/502/cwd (readlink: Permission denied)
+systemd-u 502                           root  rtd   unknown                                              /proc/502/root (readlink: Permission denied)
+systemd-u 502                           root  txt   unknown                                              /proc/502/exe (readlink: Permission denied)
+systemd-u 502                           root NOFD                                                        /proc/502/fd (opendir: Permission denied)
+systemd-u 503                           root  cwd   unknown                                              /proc/503/cwd (readlink: Permission denied)
+systemd-u 503                           root  rtd   unknown                                              /proc/503/root (readlink: Permission denied)
+systemd-u 503                           root  txt   unknown                                              /proc/503/exe (readlink: Permission denied)
+systemd-u 503                           root NOFD                                                        /proc/503/fd (opendir: Permission denied)
+systemd-u 504                           root  cwd   unknown                                              /proc/504/cwd (readlink: Permission denied)
+systemd-u 504                           root  rtd   unknown                                              /proc/504/root (readlink: Permission denied)
+systemd-u 504                           root  txt   unknown                                              /proc/504/exe (readlink: Permission denied)
+systemd-u 504                           root NOFD                                                        /proc/504/fd (opendir: Permission denied)
+systemd-u 505                           root  cwd   unknown                                              /proc/505/cwd (readlink: Permission denied)
+systemd-u 505                           root  rtd   unknown                                              /proc/505/root (readlink: Permission denied)
+systemd-u 505                           root  txt   unknown                                              /proc/505/exe (readlink: Permission denied)
+systemd-u 505                           root NOFD                                                        /proc/505/fd (opendir: Permission denied)
+systemd-u 506                           root  cwd   unknown                                              /proc/506/cwd (readlink: Permission denied)
+systemd-u 506                           root  rtd   unknown                                              /proc/506/root (readlink: Permission denied)
+systemd-u 506                           root  txt   unknown                                              /proc/506/exe (readlink: Permission denied)
+systemd-u 506                           root NOFD                                                        /proc/506/fd (opendir: Permission denied)
+python3   523                           toni  cwd       DIR               0,82     4096 7599824371266740 /mnt/c/Users/faton/OneDrive/Documents/GitHub/linux-ir-toolkit
+python3   523                           toni  rtd       DIR               8,32     4096                2 /
+python3   523                           toni  txt       REG               8,32  5937800             8882 /usr/bin/python3.10
+python3   523                           toni  mem       REG               8,32   170456            11886 /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5
+python3   523                           toni  mem       REG               8,32    45240             9994 /usr/lib/python3.10/lib-dynload/_lzma.cpython-310-x86_64-linux-gnu.so
+python3   523                           toni  mem       REG               8,32  4455728             2404 /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+python3   523                           toni  mem       REG               8,32    63728             9472 /usr/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so
+python3   523                           toni  mem       REG               8,32    74848            11671 /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+python3   523                           toni  mem       REG               8,32    32120             9976 /usr/lib/python3.10/lib-dynload/_bz2.cpython-310-x86_64-linux-gnu.so
+python3   523                           toni  mem       REG               8,32    27002            52334 /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+python3   523                           toni  mem       REG               8,32   353616            41948 /usr/lib/locale/C.utf8/LC_CTYPE
+python3   523                           toni  mem       REG               8,32  2220400            52051 /usr/lib/x86_64-linux-gnu/libc.so.6
+python3   523                           toni  mem       REG               8,32   108936            12133 /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+python3   523                           toni  mem       REG               8,32   194872            20441 /usr/lib/x86_64-linux-gnu/libexpat.so.1.8.7
+python3   523                           toni  mem       REG               8,32   940560            52054 /usr/lib/x86_64-linux-gnu/libm.so.6
+python3   523                           toni  mem       REG               8,32   240936            52048 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+python3   523                           toni    0u      CHR              136,0      0t0                3 /dev/pts/0
+python3   523                           toni    1u      CHR              136,0      0t0                3 /dev/pts/0
+python3   523                           toni    2u      CHR              136,0      0t0                3 /dev/pts/0
+python3   523                           toni    3w      REG               0,82        0 2814749767274476 /mnt/c/Users/faton/OneDrive/Documents/GitHub/linux-ir-toolkit/artifacts_20250629_102950/lsof.txt
+lsof      526                           toni  cwd       DIR               0,82     4096 7599824371266740 /mnt/c/Users/faton/OneDrive/Documents/GitHub/linux-ir-toolkit
+lsof      526                           toni  rtd       DIR               8,32     4096                2 /
+lsof      526                           toni  txt       REG               8,32   167544             1805 /usr/bin/lsof
+lsof      526                           toni  mem       REG               8,32    27002            52334 /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+lsof      526                           toni  mem       REG               8,32   353616            41948 /usr/lib/locale/C.utf8/LC_CTYPE
+lsof      526                           toni  mem       REG               8,32    68552            52065 /usr/lib/x86_64-linux-gnu/libresolv.so.2
+lsof      526                           toni  mem       REG               8,32    22600            11866 /usr/lib/x86_64-linux-gnu/libkeyutils.so.1.9
+lsof      526                           toni  mem       REG               8,32    52016            11820 /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
+lsof      526                           toni  mem       REG               8,32    18504            11689 /usr/lib/x86_64-linux-gnu/libcom_err.so.2.1
+lsof      526                           toni  mem       REG               8,32   182864            18175 /usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1
+lsof      526                           toni  mem       REG               8,32   827936            11393 /usr/lib/x86_64-linux-gnu/libkrb5.so.3.3
+lsof      526                           toni  mem       REG               8,32   613064            11983 /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.10.4
+lsof      526                           toni  mem       REG               8,32   338648            11468 /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2
+lsof      526                           toni  mem       REG               8,32  2220400            52051 /usr/lib/x86_64-linux-gnu/libc.so.6
+lsof      526                           toni  mem       REG               8,32   166280            12026 /usr/lib/x86_64-linux-gnu/libselinux.so.1
+lsof      526                           toni  mem       REG               8,32   182912            12064 /usr/lib/x86_64-linux-gnu/libtirpc.so.3.0.0
+lsof      526                           toni  mem       REG               8,32   240936            52048 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+lsof      526                           toni    0u      CHR              136,0      0t0                3 /dev/pts/0
+lsof      526                           toni    1w      REG               0,82        0 2814749767274476 /mnt/c/Users/faton/OneDrive/Documents/GitHub/linux-ir-toolkit/artifacts_20250629_102950/lsof.txt
+lsof      526                           toni    2u      CHR                1,3      0t0                3 /dev/null
+lsof      526                           toni    3r      DIR               0,62        0                1 /proc
+lsof      526                           toni    4r      DIR               0,62        0            24667 /proc/526/fd
+lsof      526                           toni    5w     FIFO               0,12      0t0            24678 pipe
+lsof      526                           toni    6r     FIFO               0,12      0t0            24679 pipe
+lsof      527                           toni  cwd       DIR               0,82     4096 7599824371266740 /mnt/c/Users/faton/OneDrive/Documents/GitHub/linux-ir-toolkit
+lsof      527                           toni  rtd       DIR               8,32     4096                2 /
+lsof      527                           toni  txt       REG               8,32   167544             1805 /usr/bin/lsof
+lsof      527                           toni  mem       REG               8,32    27002            52334 /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+lsof      527                           toni  mem       REG               8,32   353616            41948 /usr/lib/locale/C.utf8/LC_CTYPE
+lsof      527                           toni  mem       REG               8,32    68552            52065 /usr/lib/x86_64-linux-gnu/libresolv.so.2
+lsof      527                           toni  mem       REG               8,32    22600            11866 /usr/lib/x86_64-linux-gnu/libkeyutils.so.1.9
+lsof      527                           toni  mem       REG               8,32    52016            11820 /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
+lsof      527                           toni  mem       REG               8,32    18504            11689 /usr/lib/x86_64-linux-gnu/libcom_err.so.2.1
+lsof      527                           toni  mem       REG               8,32   182864            18175 /usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1
+lsof      527                           toni  mem       REG               8,32   827936            11393 /usr/lib/x86_64-linux-gnu/libkrb5.so.3.3
+lsof      527                           toni  mem       REG               8,32   613064            11983 /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.10.4
+lsof      527                           toni  mem       REG               8,32   338648            11468 /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2
+lsof      527                           toni  mem       REG               8,32  2220400            52051 /usr/lib/x86_64-linux-gnu/libc.so.6
+lsof      527                           toni  mem       REG               8,32   166280            12026 /usr/lib/x86_64-linux-gnu/libselinux.so.1
+lsof      527                           toni  mem       REG               8,32   182912            12064 /usr/lib/x86_64-linux-gnu/libtirpc.so.3.0.0
+lsof      527                           toni  mem       REG               8,32   240936            52048 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+lsof      527                           toni    4r     FIFO               0,12      0t0            24678 pipe
+lsof      527                           toni    7w     FIFO               0,12      0t0            24679 pipe
