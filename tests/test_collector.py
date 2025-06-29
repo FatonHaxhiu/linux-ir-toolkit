@@ -2,6 +2,7 @@ import os
 import pytest
 from src.collector import compute_hash
 
+
 def test_compute_hash(tmp_path):
     # Create a test file
     test_file = tmp_path / "test.txt"
