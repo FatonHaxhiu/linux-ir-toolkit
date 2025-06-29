@@ -10,7 +10,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Linux Forensics + Incident Response Toolkit")
     parser.add_argument('--output', '-o', default=None, help="Output directory (default: timestamped)")
     parser.add_argument('--package', '-p', action='store_true', help="Package artifacts into a tar.gz archive")
-    parser.add_argument('--encrypt', action='store_true', help="Encrypt archive with GPG (requires --package)")
+    parser.add_argument('--encrypt', action='store_true', help="Encrypt archive with GPG (AES256 symmetric)")
     parser.add_argument('--verbose', '-v', action='store_true', help="Enable verbose output")
     return parser.parse_args()
 
@@ -73,6 +73,19 @@ def collect_user_artifacts(verbose=False):
             save_file_copy(file_path, f"ssh_{file}", verbose)
 
 
+def collect_login_history(verbose=False):
+    save_command_output(['who'], 'who.txt', verbose)
+    save_command_output(['w'], 'w.txt', verbose)
+    save_command_output(['last'], 'last.txt', verbose)
+    save_command_output(['lastlog'], 'lastlog.txt', verbose)
+
+
+def collect_network_config(verbose=False):
+    save_file_copy('/etc/hosts', 'hosts', verbose)
+    save_file_copy('/etc/resolv.conf', 'resolv.conf', verbose)
+    save_command_output(['iptables', '-L'], 'iptables.txt', verbose)
+
+
 def generate_report():
     report_path = os.path.join(ARTIFACT_DIR, 'report.md')
     with open(report_path, 'w') as f:
@@ -110,6 +123,8 @@ def main():
 
     collect_cron_jobs(args.verbose)
     collect_user_artifacts(args.verbose)
+    collect_login_history(args.verbose)
+    collect_network_config(args.verbose)
 
     manifest = []
     for root, _, files in os.walk(ARTIFACT_DIR):
