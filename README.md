@@ -1,12 +1,12 @@
 # Linux Forensics + Incident Response Toolkit
 
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)  
-[![Linux](https://img.shields.io/badge/Linux-Ubuntu-orange)](https://ubuntu.com/)  
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) 
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/) 
+[![Linux](https://img.shields.io/badge/Linux-Ubuntu-orange)](https://ubuntu.com/) 
 [![ps](https://img.shields.io/badge/ps-procps-green)](https://gitlab.com/procps-ng/procps) 
-[![iptables](https://img.shields.io/badge/iptables-GPL-red)](https://netfilter.org/projects/iptables/index.html)  
-[![codecov](https://codecov.io/gh/FatonHaxhiu/linux-ir-toolkit/branch/main/graph/badge.svg)](https://codecov.io/gh/FatonHaxhiu/linux-ir-toolkit)
+[![iptables](https://img.shields.io/badge/iptables-GPL-red)](https://netfilter.org/projects/iptables/index.html) 
 [![GitHub Actions](https://github.com/FatonHaxhiu/linux-ir-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/FatonHaxhiu/linux-ir-toolkit/actions/workflows/ci.yml)
+
 
 
 
