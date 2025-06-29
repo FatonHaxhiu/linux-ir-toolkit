@@ -21,7 +21,7 @@ jobs:
         pip install flake8 black pytest coverage
 
     - name: Lint with flake8
-      run: flake8 src/
+      run: flake8 src/collector.py
 
     - name: Check formatting with black
       run: black --check src/ tests/

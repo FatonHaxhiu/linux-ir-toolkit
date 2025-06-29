@@ -5,6 +5,7 @@
 [![Linux](https://img.shields.io/badge/Linux-Ubuntu-orange)](https://ubuntu.com/)  
 [![ps](https://img.shields.io/badge/ps-procps-green)](https://gitlab.com/procps-ng/procps) 
 [![iptables](https://img.shields.io/badge/iptables-GPL-red)](https://netfilter.org/projects/iptables/index.html)  
+[![codecov](https://codecov.io/gh/yourusername/linux-ir-toolkit/branch/main/graph/badge.svg)](https://codecov.io/gh/yourusername/linux-ir-toolkit)
 [![GitHub Actions](https://github.com/FatonHaxhiu/linux-ir-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/FatonHaxhiu/linux-ir-toolkit/actions/workflows/ci.yml)
 
 
