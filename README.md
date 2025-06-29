@@ -20,13 +20,21 @@ The toolkit collects processes, network info, configuration files, logs, user ac
 ## Features
 
 - Collects system artifacts such as:
-  - Running processes (`ps auxf`)
-  - Network connections and open ports (`netstat -tulpen`)
+  - Process list (`ps auxf`)
+  - Network connections (`netstat -tulpen`)
   - Open files (`lsof`)
-  - Kernel modules and messages (`lsmod`, `dmesg`)
-  - Important configuration files (`/etc/passwd`, `/etc/shadow`, `/etc/sudoers`)
-  - User bash history and cron jobs
-  - Installed packages, login history, and firewall rules
+  - Kernel modules (`lsmod`)
+  - Kernel messages (`dmesg --ctime`)
+  - `/etc/passwd`, `/etc/shadow`, `/etc/sudoers`
+  - `/var/log/auth.log`, `/var/log/syslog`
+  - Crontab + `/etc/cron*`
+  - User bash history
+  - User `.ssh/` directory
+  - Login sessions (`who`, `w`, `last`, `lastlog`)
+  - Hostname/DNS config (`/etc/hosts`, `/etc/resolv.conf`)
+  - Firewall rules (`iptables -L`)
+  - SHA-256 hash manifest
+  - Markdown report
 
 - Computes SHA256 hashes for collected files (chain of custody)
 
